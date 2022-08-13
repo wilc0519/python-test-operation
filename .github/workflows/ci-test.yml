@@ -23,7 +23,9 @@ jobs:
           pip install pytest-cov
       - name: Run tests with pytest
         run: pytest -v --cov=. --cov-report=html 
-      - name: Generate coverage report
-        env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
-        run: bash <(curl -s https://codecov.io/bash)
+      - name: Generate Report
+        run: |
+          pip install coverage
+          coverage run -m pytest
+      - name: Upload Coverage to Codecov
+        uses: codecov/codecov-action@v2
