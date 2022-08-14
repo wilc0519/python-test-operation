@@ -20,6 +20,3 @@ class TestSuma(unittest.TestCase):
         self.assertEqual(prod,28)
 
         
-
-if __name__ == '__main__':
-    unittest.main()
