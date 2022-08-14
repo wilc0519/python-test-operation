@@ -29,3 +29,7 @@ jobs:
           coverage run -m pytest
       - name: Upload Coverage to Codecov
         uses: codecov/codecov-action@v2
+      - name: coverage
+        run: |
+          coverage run -m pytest
+          coverage report --fail-under=50
