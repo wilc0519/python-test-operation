@@ -1,2 +1,0 @@
-import unittest
-from factorial import factorial_number
