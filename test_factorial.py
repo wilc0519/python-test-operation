@@ -7,7 +7,10 @@ class TestFactorial(unittest.TestCase):
         fact = factorial_number(number)
         self.assertEqual(fact, 6)
 
-       
+    def test_factorial_of_uno(self):
+        number = 1
+        fact = factorial_number(number)
+        self.assertEqual(fact, 1)   
 
     def test_factorial_of_cero(self):
         number = 0
