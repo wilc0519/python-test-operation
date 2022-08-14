@@ -1,8 +1,9 @@
 import unittest
-from suma_numeros import sum_numbers, prod_numbers
+from factorial import factorial_number
 
 class TestFactorial(unittest.TestCase):
     def test_factorial(self):
         number = 3
-        self.assertEqual(number, 6)
+        fact = factorial_number(number)
+        self.assertEqual(fact, 6)
 
