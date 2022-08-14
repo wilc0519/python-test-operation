@@ -10,5 +10,10 @@ class TestFactorial(unittest.TestCase):
     def test_factorial(self):
         number = 1
         fact = factorial_number(number)
-        self.assertEqual(fact, 1)    
+        self.assertEqual(fact, 1)   
+
+    def test_factorial(self):
+        number = 0
+        fact = factorial_number(number)
+        self.assertEqual(fact, 0)     
 
